@@ -1,7 +1,5 @@
 # KANTE – Barbier in Graz (Demo)
 
-[![Tests](https://github.com/BugCraftAG/kante-barbier/actions/workflows/test.yml/badge.svg)](https://github.com/BugCraftAG/kante-barbier/actions/workflows/test.yml)
-
 Website für einen **fiktiven** Barbershop mit echter Online-Terminbuchung – ohne Framework, ohne Abhängigkeiten, ohne Backend.
 
 **Live:** https://bugcraftag.github.io/kante-barbier/
@@ -55,7 +53,7 @@ npm start      # lokaler Server auf http://localhost:8080 (ES-Module brauchen ht
 npm test       # 19 Tests, keine Abhängigkeiten, Node 22+
 ```
 
-Die Tests laufen bei jedem Push automatisch über GitHub Actions.
+Ein GitHub-Actions-Workflow (`.github/workflows/test.yml`) führt dieselben Tests in der Cloud aus.
 
 ## Lizenz
 
