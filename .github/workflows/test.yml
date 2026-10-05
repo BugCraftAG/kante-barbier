@@ -1,8 +1,11 @@
 name: Tests
 
+# Läuft derzeit nur auf Knopfdruck (Actions → Tests → Run workflow).
+# Wieder automatisch bei jedem Push: die Zeilen unten einkommentieren.
 on:
-  push:
-  pull_request:
+  workflow_dispatch:
+  # push:
+  # pull_request:
 
 jobs:
   test:
