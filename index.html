@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de-AT">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>KANTE – Barbier in Graz-Lend · Termin online buchen</title>
+  <meta name="description" content="Haarschnitt, Skin Fade, Bart und Nassrasur in Graz-Lend. Freie Termine sofort sehen und in 30 Sekunden online buchen.">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0d0d0c">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Schriften liegen auf dem eigenen Server: keine Anfrage an Google, keine DSGVO-Frage -->
+  <link rel="preload" href="fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+
+  <meta property="og:title" content="KANTE – Barbier in Graz-Lend">
+  <meta property="og:description" content="Freie Termine sofort sehen und online buchen.">
+  <meta property="og:type" content="website">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "KANTE Barbier (Demo)",
+    "address": { "@type": "PostalAddress", "streetAddress": "Musterplatz 3", "postalCode": "8020", "addressLocality": "Graz", "addressCountry": "AT" },
+    "telephone": "+43 316 000 000",
+    "priceRange": "€€",
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "09:00", "closes": "20:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#termin">Direkt zur Terminbuchung</a>
+
+  <aside class="demo-bar" aria-label="Hinweis">Beispielprojekt · KANTE gibt es nicht · Design &amp; Code: David Tomoiaga</aside>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="KANTE Barbier, zum Seitenanfang">
+        <svg class="logo-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V3h4v8l8-8h5l-9 9 9 9h-5l-8-8v8z"/></svg>
+        <span class="logo-word">KANTE</span>
+      </a>
+
+      <p class="status" data-status><span class="status-dot" aria-hidden="true"></span><span>Öffnungszeiten werden geladen</span></p>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="nav">
+        <span class="sr-only">Menü</span><span class="nav-toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav id="nav" class="nav" data-nav aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#team">Team</a>
+        <a href="#besuch">Besuch</a>
+        <a class="btn btn-accent btn-sm" href="#termin">Termin buchen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-meta">
+          <span>Barbier · Graz-Lend</span>
+          <span>Seit 2011</span>
+          <span class="hide-sm">47.0731° N  15.4320° O</span>
+        </div>
+
+        <h1 id="hero-title" class="hero-title">
+          Ein guter Schnitt ist<br>eine Frage von <em>Millimetern.</em>
+        </h1>
+      </div>
+
+      <figure class="fade" aria-label="Grafik: ein Übergang von langem zu kurzem Haar, dargestellt als Punkteraster">
+        <canvas class="fade-canvas" data-fade></canvas>
+        <figcaption class="container fade-scale" aria-hidden="true">
+          <span>12 mm</span><span>9</span><span>6</span><span>3</span><span>1,5</span><span>0,5</span><span>0</span>
+        </figcaption>
+      </figure>
+
+      <div class="container">
+        <dl class="hero-facts">
+          <div class="fact">
+            <dt>Nächster freier Termin</dt>
+            <dd><button class="fact-value fact-link" type="button" data-next>wird berechnet</button><span class="fact-sub" data-next-who></span></dd>
+          </div>
+          <div class="fact">
+            <dt>Ohne Termin</dt>
+            <dd><span class="fact-value" data-walkin>—</span><span class="fact-sub" data-walkin-who></span></dd>
+          </div>
+          <div class="fact">
+            <dt>Haarschnitt</dt>
+            <dd><span class="fact-value">€ 34</span><span class="fact-sub">inklusive Waschen. Kein Aufpreis für langes Haar.</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ================= LEISTUNGEN ================= -->
+    <section id="leistungen" class="section" aria-labelledby="leistungen-title">
+      <div class="container split">
+        <header class="split-head">
+          <p class="eyebrow">Leistungen</p>
+          <h2 id="leistungen-title" class="h2">Sieben Dinge.<br><em>Die können wir.</em></h2>
+          <p class="lead">Keine Haarfarbe, keine Dauerwelle, kein Produktregal an der Kasse. Dafür nehmen wir uns für jeden Schnitt so lange Zeit, wie dasteht.</p>
+          <p class="note">Bezahlen mit Karte, Handy oder bar.</p>
+        </header>
+        <ol class="services" data-services></ol>
+      </div>
+    </section>
+
+    <!-- ================= BUCHUNG ================= -->
+    <section id="termin" class="section section-booking" aria-labelledby="termin-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Termin</p>
+          <h2 id="termin-title" class="h2">Freie Zeiten sehen, <em>sofort buchen.</em></h2>
+        </header>
+
+        <div class="booking">
+          <form class="booking-form" novalidate>
+            <div data-booking aria-live="polite">
+              <noscript><p class="lead">Für die Online-Buchung wird JavaScript benötigt. Rufen Sie uns gern an: <a href="tel:+43316000000">0316 000 000</a>.</p></noscript>
+            </div>
+          </form>
+          <aside class="booking-summary" data-summary aria-label="Zusammenfassung Ihres Termins"></aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM ================= -->
+    <section id="team" class="section" aria-labelledby="team-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Team</p>
+          <h2 id="team-title" class="h2">Drei Stühle. <em>Drei Handschriften.</em></h2>
+        </header>
+        <div class="team" data-team></div>
+      </div>
+    </section>
+
+    <!-- ================= BESUCH ================= -->
+    <section id="besuch" class="section section-visit" aria-labelledby="besuch-title">
+      <div class="container visit">
+        <div>
+          <p class="eyebrow">Besuch</p>
+          <h2 id="besuch-title" class="h2">Musterplatz 3,<br><em>8020 Graz.</em></h2>
+          <p class="lead">Zwei Minuten vom Südtirolerplatz. Straßenbahn 1, 3, 6 und 7, Haltestelle Musterplatz. Fahrräder dürfen in den Hof.</p>
+          <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Lend+8020+Graz" target="_blank" rel="noopener">Route in Google Maps →</a>
+        </div>
+        <table class="hours">
+          <caption class="eyebrow">Öffnungszeiten</caption>
+          <tbody data-hours></tbody>
+        </table>
+        <ul class="rules">
+          <li><h3>Zu spät?</h3><p>Ab zehn Minuten müssen wir kürzen oder verschieben. Sonst wartet der Nächste.</p></li>
+          <li><h3>Absagen</h3><p>Bis zwölf Stunden vorher kostenlos – per Link in der SMS oder telefonisch.</p></li>
+          <li><h3>Trinkgeld</h3><p>Freut uns, ist aber nie Pflicht. Ein Kartenterminal mit Trinkgeld-Frage gibt es bei uns nicht.</p></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="footer-k">Adresse</p>
+        <p>KANTE Barbier<br>Musterplatz 3<br>8020 Graz</p>
+      </div>
+      <div>
+        <p class="footer-k">Kontakt</p>
+        <p><a href="tel:+43316000000">0316 000 000</a><br><a href="mailto:termin@kante.example">termin@kante.example</a></p>
+      </div>
+      <div>
+        <p class="footer-k">Rechtliches</p>
+        <p><a href="impressum.html">Impressum</a><br><a href="impressum.html#datenschutz">Datenschutz</a></p>
+      </div>
+      <div>
+        <p class="footer-k">Kolophon</p>
+        <p>Gesetzt in Instrument Serif und Geist. Keine Cookies, kein Tracking, keine Anfragen an fremde Server. <a href="https://github.com/BugCraftAG/kante-barbier">Quellcode</a></p>
+      </div>
+    </div>
+    <div class="footer-word" aria-hidden="true"></div>
+  </footer>
+</body>
+</html>
